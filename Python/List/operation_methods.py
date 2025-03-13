@@ -44,3 +44,5 @@ counts = fruits.count('apple')
 
 #7 index
 print(fruits.index('cherry'))
+
+#8cd

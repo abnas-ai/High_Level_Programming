@@ -27,4 +27,4 @@ del students[1]
 
 # clear() method
 students.clear()
-print(students)
+# print(students)
