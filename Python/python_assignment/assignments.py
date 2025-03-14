@@ -1,3 +1,9 @@
+#create  a list of numbers (2 to 3 similar numbers) and create a program that :
+#adds all the numbers
+#checks the number with the lowest value
+#checks the number with trhe highest value
+
+
 # thislist = [15, 16, 17, 15, 15, 18, 20, 16, 20, 20, 25, 23, 26, 30, 33]
 # x = sum(thislist)
 # # print(x)
@@ -10,6 +16,12 @@
 # highest = max(thislist)
 # print(highest)
 
+
+# #Task: Create a program that takes three inputs (first number, operator, second number)
+# #  and outputs the result of the calculation. The program should handle invalid inputs and division by zero errors.
+
+
+# #****TRIAL 1*****
 
 # num1 = float(input("Enter first number: "))
 # operator = input("Enter operator (+, -, *, /): ")
@@ -30,7 +42,11 @@
 
 
 
+# #Task: Create a program that takes three inputs (first number, operator, second number)
+# #  and outputs the result of the calculation.
 
+
+# #****TRIAL 2*****
 
 
 # num1 = float(input("Enter first number: "))
@@ -58,8 +74,7 @@
 
 
 
-#Task: Create a program that takes three inputs (first number, operator, second number)
- and outputs the result of the calculation. The program should handle invalid inputs and division by zero errors.
+#*******FINAL TRIAL********
 
 try:
     num1 = float(input("Enter first number: "))
