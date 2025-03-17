@@ -196,10 +196,10 @@
 # print(new_string)
 
 #18****strips*****
-text = " python "
-print(text)
-text = " python "
-new_text = text.strip()
-print(new_text)
+# text = " python "
+# print(text)
+# text = " python "
+# new_text = text.strip()
+# print(new_text)
 
 
