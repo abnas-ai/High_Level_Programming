@@ -212,3 +212,41 @@ food = [drinks, dinner, dessert]
 #access one item:
 #use case:
 # print(food[0][0])
+
+#*****DICTIONARIES*****
+#A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.
+#Accessing items:
+#use case:
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict["model"]
+# print(x)
+#****OR***
+x = thisdict.get("model")
+# print(x)
+
+
+#****THE get() Method*****
+#The get() method returns the value of the item with the specified key.
+#use case:
+#****get specific value****
+x = thisdict.get("model")
+#***get list of all the keys****
+# x = thisdict.keys()
+# print(x)
+
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.keys()
+car["color"] = "red"
+print(x) 
+
