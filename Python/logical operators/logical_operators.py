@@ -95,3 +95,5 @@ if not sunny:
      print("the sun is shining")
 else:
      print("it is cloudy")
+
+

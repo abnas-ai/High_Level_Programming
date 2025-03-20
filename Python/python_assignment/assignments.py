@@ -140,32 +140,32 @@
 
 #*******FINAL TRIAL********
 
-# try:
-#     num1 = float(input("Enter first number: "))
-#     operator = input("Enter operator (+, -, *, /): ") 
-#     num2 = float(input("Enter second number: "))
+try:
+    num1 = float(input("Enter first number: "))
+    operator = input("Enter operator (+, -, *, /): ") 
+    num2 = float(input("Enter second number: "))
 
-#     if operator == '+':
-#         result = num1 + num2
-#     elif operator == '-':
-#         result = num1 - num2
-#     elif operator == '*':
-#         result = num1 * num2
-#     elif operator == '/':
-#         if num2 == 0:
-#             print("Error: Division by zero is not allowed.")
-#             result = None
-#         else:
-#             result = num1 / num2
-#     else:
-#         print("Invalid operator! Use +, -, *, or /.")
-#         result = None
+    if operator == '+':
+        result = num1 + num2
+    elif operator == '-':
+        result = num1 - num2
+    elif operator == '*':
+        result = num1 * num2
+    elif operator == '/':
+        if num2 == 0:
+            print("Error: Division by zero is not allowed.")
+            result = None
+        else:
+            result = num1 / num2
+    else:
+        print("Invalid operator! Use +, -, *, or /.")
+        result = None
 
-#     if result is not None:
-#         print(f"Result: {result}")
+    if result is not None:
+        print(f"Result: {result}")
 
-# except ValueError:
-#     print("Invalid input! Please enter numeric values.")
+except ValueError:
+    print("Invalid input! Please enter numeric values.")
 
 #Loop control statements******
 #They change a loop execution from its normal sequence
@@ -198,11 +198,11 @@
 #****2D LISTS*****
 #2D Lists is a list of lists
 #use case:
-drinks = ["coffee", "soda", "tea"]
-dinner = ["pizza", "hamburger", "hotdog"]
-dessert = ["cake", "ice scream"]
+# drinks = ["coffee", "soda", "tea"]
+# dinner = ["pizza", "hamburger", "hotdog"]
+# dessert = ["cake", "ice scream"]
 
-food = [drinks, dinner, dessert]
+# food = [drinks, dinner, dessert]
 # print(food)
 
 #access a list and an item
@@ -218,35 +218,35 @@ food = [drinks, dinner, dessert]
 #Accessing items:
 #use case:
 
-thisdict =	{
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
-x = thisdict["model"]
-# print(x)
-#****OR***
-x = thisdict.get("model")
-# print(x)
+# thisdict =	{
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# x = thisdict["model"]
+# # print(x)
+# #****OR***
+# x = thisdict.get("model")
+# # print(x)
 
 
-#****THE get() Method*****
-#The get() method returns the value of the item with the specified key.
-#use case:
-#****get specific value****
-x = thisdict.get("model")
-#***get list of all the keys****
-# x = thisdict.keys()
-# print(x)
+# #****THE get() Method*****
+# #The get() method returns the value of the item with the specified key.
+# #use case:
+# #****get specific value****
+# x = thisdict.get("model")
+# #***get list of all the keys****
+# # x = thisdict.keys()
+# # print(x)
 
 
-car = {
-"brand": "Ford",
-"model": "Mustang",
-"year": 1964
-}
+# car = {
+# "brand": "Ford",
+# "model": "Mustang",
+# "year": 1964
+# }
 
-x = car.keys()
-car["color"] = "red"
-print(x) 
+# x = car.keys()
+# car["color"] = "red"
+# print(x) 
 
