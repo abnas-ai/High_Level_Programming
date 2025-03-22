@@ -43,7 +43,7 @@ list_y = [1,2,3,4,5]
 list_z = list_x
 
 
-# if a > b and (3 in list_x or text is not None):
-#       print("complex condition met: a is greater than b AND 3 is in list_x OR text is not None")
+if a > b and (3 in list_x or text is not None):
+      print("complex condition met: a is greater than b AND 3 is in list_x OR text is not None")
 if list_x is list_z and len(text) > 0:
       print("list_x and list_z are the same object AND the length of text is greater than 0")
