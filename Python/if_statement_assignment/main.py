@@ -11,12 +11,12 @@
   #           print(f"{year} is not a leap year")
 
 
-i = 1
-while i <= 1_0:
-  print(i * "*")
+# i = 1
+# while i <= 1_0:
+#   print(i * "*")
 
-  i = i +  1
-  print("done")
+#   i = i +  1
+#   print("done")
 
 # i = 0
 # while i < 3:
