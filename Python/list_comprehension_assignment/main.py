@@ -1,4 +1,5 @@
-
+#USE CASE 1 
+#LIST ITEMS
 # fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 # newlist = []
 
@@ -16,14 +17,6 @@
 # print(newlist)  
 
 
-
-
-
-
-
-
-
-
 # teachers = ["Getrude", "Tom", "Mufti", "Kangogo", "Obama"]
 # newteachers = []
 # for y in teachers:
@@ -39,17 +32,7 @@
 
 # print(newteachers)
       
-         
-
-
-
-
-
-
-
-
-
-
+        
 
 # dj = ["bash", "kalonje", "masumbuko", "lyta"]
 # newdj = []
@@ -87,8 +70,7 @@
 
 
 # USE CASE 4
-# a = [1, 2, 3, 4, 5]
-
+#****NUMBERS
 # # Create an empty list 'res' to store results
 # res = []
 
@@ -110,11 +92,6 @@
 
 
 
-
-
-
-
-
 # a = [1, 2, 3, 4, 5]
 # change = []
 # for num in a:
@@ -123,7 +100,7 @@
 
 
 a = [1, 2, 3, 4, 5]
-change = [y * 2 for value in a]
+change = [num * 2 for num in a]
 print(change)
 
 
