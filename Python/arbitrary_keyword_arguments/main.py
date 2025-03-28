@@ -40,9 +40,9 @@
 
 
 #lambda functions
-x = lambda x, y: x + y
+# x = lambda x, y: x + y
 
-print(x(5, 8))
+# print(x(5, 8))
 
 def xy(a, b):
     print(a + b)
