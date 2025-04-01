@@ -1,26 +1,38 @@
 
-#methods - functions that belong to an object(defined in a class)
+from datetime import date
+#Method types in class/OOP
 
-class student:
-    def __init__(self, name, age, scores, id_number=None, courses=None):
-        self.name = name
+class User:
+    def __init__(self, username, age=None, is_admin=False):
+        self.username = username
         self.age = age
-        self.scores = scores
-        self.id_number = id_number
-        self.courses = [x for x in courses] if courses else []
+        self.is_admin = is_admin
+
+    
+    #1.instance method
+    def get_username(self):
+        return self.username
+    
+    #2.class method
+    @classmethod #decorator
+    def create_admin(cls,username):
+        return cls(username,is_admin=True)
+    
+    @classmethod
+    def user_with_age(cls,username,dob:int):
+        current_year = date.today().year
+        age = current_year - dob
+        return cls(username,age)
+#Static method
+    @staticmethod
+    def add_email(username,email):
+        return f"{username} has email {email}"
         
-    def pass_fail(self):
-        if self.scores >= 50:
-            return " an Average student"
-        else:
-            return "is a poor student"
-    def is_active(self):
-        if self.courses == []:
-            return "Not enrolled"
-        else:
-            return "Enrolled"
-        
-dorothy = student("Dorothy", 20, 53, "AASE09", courses=["Python", "HTML"])
-John = student("John", 30, 42, id_number="AASE010")
-print(f"{dorothy.name} of ID {dorothy.id_number} is {dorothy.pass_fail()} and {dorothy.is_active()}")
-print(f"{John.name} of ID {John.id_number} is {John.pass_fail()} and {John.is_active()}")
+user1 = User("Ben")
+# print(f"{user1.get_username()} is_admin:{user1.is_admin}")
+user2 = User.create_admin("Kipngeno")
+# print(f"{user2.get_username()} is_admin:{user2.is_admin}")
+user3 = User.user_with_age("Doro",2000)
+# print(f"{user3.get_username()} is_admin{user3.is_admin} age{user3.age}")
+user4 = User.add_email("rop","rop@email.com")
+print(user4)
