@@ -17,14 +17,17 @@ human = {
     "hobbies" : ["fishing", "hiking", "reading"]
 }
 #a class is a blueprint for creating objects
-class student:
+class Student:
     def __init__(self, name, age, id_number=None, courses=None):
         self.name = name
         self.age = age
         self.id_number = id_number
         self.courses = [x for x in courses] if courses else []
         
-enock = student("Enock", 20, id_number="123456", courses=["python", "html"])
-rop = student("Rop", 24, id_number="425374", courses=["Java", "Python"])
+enock = Student(name="Enock", age=20, id_number="123456", courses=["python", "html"])
+print(f"student name is {enock.name} with age {enock.age} with id number {enock.id_number} studying {enock.courses}")
+
+
+rop = Student(name="Rop", age=24, id_number="425374", courses=["Java", "Python"])
 # print(f"student Name is {rop.name} and age is {rop.age} with courses")
-print(f"Student Name is {rop.name} and age is {rop.age} studying {rop.courses} with id number {rop.id_number}")
+# print(f"Student Name is {rop.name} and age is {rop.age} studying {rop.courses} with id number {rop.id_number}")
