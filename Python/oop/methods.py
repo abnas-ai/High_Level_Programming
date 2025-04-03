@@ -29,7 +29,7 @@ class User:
         return f"{username} has email {email}"
         
 user1 = User("Ben")
-# print(f"{user1.get_username()} is_admin:{user1.is_admin}")
+print(f"{user1.get_username()} is_admin:{user1.is_admin}")
 user2 = User.create_admin("Kipngeno")
 # print(f"{user2.get_username()} is_admin:{user2.is_admin}")
 user3 = User.user_with_age("Doro",2000)
