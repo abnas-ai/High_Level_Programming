@@ -19,5 +19,5 @@ class Car(Vehicle):
         
 car_1 = Car("Honda", "Civic", 2021, "Petrol")
 if __name__ == "__main__":
-  print(car_1.get_info())
+#   print(car_1.get_info())
   print(car_1.get_all_info())
