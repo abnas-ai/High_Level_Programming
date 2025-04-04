@@ -35,5 +35,5 @@ class ElectricSystem:
             self.voltage = voltage
             
         def get_voltage(self):
-            return f"THis system runs on {self.voltage} volts."
+            return f"This system runs on {self.voltage} volts."
            
