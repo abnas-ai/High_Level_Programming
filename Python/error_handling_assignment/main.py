@@ -2,16 +2,16 @@
 
 
 class AbnasFileError(Exception):
-    def  file_not_found(self):
-        return "File not found"
-    def file_name_correct(self):
-        return "File name is correct"
+    pass
+
+def divide(a, b):
+    if b == 0:
+        raise AbnasFileError("Division by zero is not allowed")
+    return a/b
 
 try:
-    f = open("abnasfile.txt")
-    if f.name == "abnasfile.txt":
-        raise  Exception
-    
-    
-except Exception as e:
-    print(f"Error! ") 
+    f = divide (5, 0)
+
+  
+except AbnasFileError as e:
+    print(f"Error! cannot divide a number by zero: {e}") 
